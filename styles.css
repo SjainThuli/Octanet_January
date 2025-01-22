@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Glacial Indifference;
+}
+
+header {
+  background-color: #00002a;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.logo {
+  margin-left: 150px;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+  margin: 5 12px;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  float: right;
+  margin-top: -40px;
+}
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a {
+  background-color: #ff008a;
+  color: #fff;
+  border-radius: 75px;
+}
+ul li.active1 a {
+  background-color: #00acff;
+  color: #fff;
+  border-radius: 75px;
+}
+
+.border {
+  border: 1px solid #969faa;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 40px;
+  width: 851px;
+  text-align: left;
+  margin-top: 50px;
+  left: 50px;
+}
+
+.p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  width: 1018px;
+  text-align: left;
+}
+.p1 {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+}
+.appleapp img {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100px;
+  height: 50px;
+  margin-left: 180px;
+}
+.googleapp img {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100px;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-top: -50px;
+}
+.blackgirl img {
+  border-radius: 10px;
+  opacity: 0.4;
+  width: 450px;
+  height: 350px;
+  margin-left: 700px;
+  margin-top: -300px;
+}
+.play {
+  margin-left: 900px;
+  margin-top: -200px;
+}
+.play img {
+  width: 50px;
+  height: 50px;
+}
+.content {
+  margin-left: 150px;
+}
+.images img {
+  width: 50px;
+  height: 50px;
+  margin-top: 200px;
+  margin-left: 130px;
+}
+
+.b {
+  margin-left: 140px;
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+.ca {
+  margin-left: 312px;
+  margin-top: -15px;
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+.co {
+  margin-left: 500px;
+  margin-top: -10px;
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+.sc {
+  margin-left: 685px;
+  margin-top: -15px;
+  color: #4d4d4d;
+  align-items: center;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+.c {
+  margin-left: 875px;
+  margin-top: -10px;
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+.ph {
+  margin-left: 1053px;
+  margin-top: -15px;
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+}
+
+#howitworks {
+  height: 600px;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+}
+.title2 {
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 70px;
+  text-align: center;
+}
+.bottle img {
+  width: 70px;
+  height: 70px;
+  margin-left: 1000px;
+  margin-top: 10px;
+}
+.subtitle2 {
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 10px;
+  text-align: center;
+}
+.confetti img {
+  width: 5%;
+  height: 5%;
+  margin-left: 5%;
+}
+.container {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px dotted #c7d1db;
+  border-radius: 75px;
+  width: 250px;
+  height: 50px;
+  margin-left: 500px;
+  margin-top: -50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #32cd32;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #32cd32;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.title01 {
+  color: #32cd32;
+  font-size: 20px;
+  font-weight: bold;
+}
+.subtitle3 {
+  color: #4d4d4d;
+  font-size: 10px;
+}
+.title02 {
+  color: #4d4d4d;
+  font-family: Glacial Indifference;
+  font-size: 20px;
+  line-height: 52px;
+  font-weight: bold;
+}
+.cupcake {
+  margin-left: -20%;
+  margin-top: -12%;
+}
+.Shield {
+  margin-left: -20%;
+  margin-top: -10%;
+}
+.Approve {
+  margin-left: -20%;
+  margin-top: -10%;
+}
+.xmasimg img {
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+  margin-top: -200px;
+}
+.phone img {
+  width: 25%;
+  height: 25%;
+  margin-left: 50%;
+  margin-top: -35%;
+  position: relative;
+}
+.client {
+  text-align: left;
+  margin-right: 20px;
+}
+.vendor {
+  text-align: right;
+  margin-left: 20px;
+}
+#toggle1 {
+  margin-left: 350px;
+}
+#text {
+  margin-left: 350px;
+}
+#features {
+  height: 600px;
+  background-color: #fcfcfc;
+  display: inline-block;
+  width: 100%;
+}
+.card1 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+.photo {
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.cardtext {
+  color: #32cd32;
+  font-family: Glacial Indifference;
+  font-size: 15px;
+  text-align: center;
+}
+.cardp1 {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+.card2 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.card3 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 40%;
+  margin-top: -53%;
+}
+.card4 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+.card5 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 65%;
+  margin-top: -53%;
+}
+.card6 {
+  background-color: #00002a;
+  border: 2px dotted #c7d1db;
+  border-radius: 10px;
+  width: 18%;
+  height: 50%;
+  margin-left: 65%;
+  margin-top: 5%;
+}
+#contactus {
+  background-color: white;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.giftbox img{
+	height: 6%;
+	width: 6%;
+	margin-top: 15%;
+	margin-left: 25%;
+}
+.decoration img {
+	height: 6%;
+	width: 6%;
+	margin-left: 85%;
+	margin-top: -10%;
+}
+.map {
+	height: 100px;
+	width: 100%;
+	opacity: .3;
+}
+.contactuscard {
+  background-color: #00002A;
+  border: 2px dotted #C7D1DB;
+  border-radius: 10px;
+  width: 750px;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contacttext {
+  color: #FFFFFF;
+  font-family: Glacial Indifference;
+  font-size: 35px;
+  text-align: center;
+}
+.inputname {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 75px;
+  width: 250px;
+  height: 40px;
+  margin-left: 70px;
+  margin-top: 3%;
+}
+.inputemail {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 75px;
+  width: 250px;
+  height: 40px;
+  margin-left: 80px;
+}
+.inputsubject {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 75px;
+  width: 250px;
+  height: 40px;
+  margin-left: 70px;
+  margin-top: 3%;
+}
+.inputcontact {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 75px;
+  width: 250px;
+  height: 40px;
+  margin-left: 80px;
+}
+.inputmessage {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 25px;
+  width: 450px;
+  height: 130px;
+  margin-left: 150px;
+}
+.btnsubmit {
+  background-color: #32cd32;
+  border-radius: 75px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: -10%;
+  margin-left: 40%;
+}
+
+.btnsubmit button {
+	
+}
+.footer {
+  background-color: #00002A;
+  width: 100%;
+  height: 200px;
+  margin-top: 10%;
+}
+.footertext {
+  color: #F7F7F7;
+  font-family: Glacial Indifference;
+  font-size: 25px;
+  line-height: 28px;
+  margin-left: 10%;  
+}
+.footerappios img {
+  background-color: rgba(255, 255, 255, 0);
+  width: 8%;
+  height: 8%;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+.footerappgoogle img{
+  background-color: rgba(255, 255, 255, 0);
+  width: 8%;
+  height: 8%;
+  margin-left: 20%;
+  margin-bottom: 3%;
+  margin-top: -3%;
+}
+.textcover {
+  color: #F7F7F7;
+  font-family: Glacial Indifference;
+  font-size: 11px;
+  margin-top: 5%;
+}
+.footertext1 {
+	margin-top: -3%;
+	margin-left: 10%;
+}
+.footertext2 {
+	margin-top: -1%;
+	margin-left: 10%;
+}
+.footertext3 {
+	margin-top: -1%;
+	margin-left: 10%;
+}
+.footercopyright {
+  color: #F7F7F7;
+  font-family: Glacial Indifference;
+  font-size: 11px;
+  margin-top: 1%;
+  margin-left: 40%;
+}
+.containernews {
+  margin-left: 60%;
+  margin-top: -13%;
+}
+.textnews {
+  color: #F7F7F7;
+  font-family: Glacial Indifference;
+  font-size: 25px;
+}
+.textmail {
+  background-color: rgba(255, 0, 138, 0);
+  border: 2px solid #5A6978;
+  border-radius: 75px;
+  width: 180px;
+  height: 40px;
+}
+.btnsubcribe {
+  background-color: #32cd32;
+  border-radius: 75px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  text-align: center; 
+  font-family: Glacial Indifference;
+  font-size: 15px;
+  cursor: pointer;
+}
+.facebook img{
+	width: 3%;
+	height: 2%;
+	margin-left: 5%;
+}
+.instagram img {
+	width: 3%;
+	height: 2%;
+	margin-left: 15%;
+	margin-bottom: 4%;
+	margin-top: -10%;
+}
+.twitter img {
+	width: 3%;
+	height: 2%;
+	margin-left: 25%;
+	margin-top: -30%;
+	margin-bottom: 8%;
+}
+.socialicons {
+	margin-top: 2%;
+}
+.rocket img{
+	width: 10%;
+	height: 10%;
+	margin-left: 70%;
+	margin-top: -35%;
+	margin-bottom: 10%;
+}
